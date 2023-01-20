@@ -7,30 +7,30 @@ import hydra
 from hydra.core.config_store import ConfigStore
 from omegaconf import OmegaConf, DictConfig
 
-from kospeech.data.data_loader import split_dataset
-from kospeech.optim import Optimizer
-from kospeech.model_builder import build_model
-from kospeech.utils import (
+from data.data_loader import split_dataset
+from optim import Optimizer
+from model_builder import build_model
+from utils import (
     check_envirionment,
     get_optimizer,
     get_criterion,
     logger,
     get_lr_scheduler,
 )
-from kospeech.vocabs import (
+from vocabs import (
     KsponSpeechVocabulary,
     LibriSpeechVocabulary,
 )
-from kospeech.data.audio import (
+from data.audio import (
     FilterBankConfig,
     MelSpectrogramConfig,
     MfccConfig,
     SpectrogramConfig,
 )
-from kospeech.models import (
+from model import (
     DeepSpeech2Config,
 )
-from kospeech.trainer import (
+from trainer import (
     DeepSpeech2TrainConfig,
 )
 
