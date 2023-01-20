@@ -4,9 +4,9 @@ import torch.nn.functional as F
 from torch import Tensor
 from typing import Tuple
 
-from models.convolution import DeepSpeech2Extractor
-from models.model import EncoderModel
-from models.modules import Linear
+from model.convolution import DeepSpeech2Extractor
+from model.model import EncoderModel
+from model.modules import Linear
 
 
 class BNReluRNN(nn.Module):
